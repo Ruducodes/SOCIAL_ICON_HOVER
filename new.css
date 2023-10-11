@@ -1,0 +1,190 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: BLACK;
+}
+.main{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.insta{
+    width: 50px;
+    height: 50px;
+    margin: 0 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.insta a{
+    color: WHITE;
+}
+.insta::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        to bottom left,
+        #4f5bd5,
+        #962fbf,
+        #d62976,
+        #fa7e1e,
+        #feda75
+      );
+    z-index: -1;
+    border-radius: 50%;
+    transform: translate(100%,100%);
+    transition: all .4s;
+}
+.insta:hover::before{
+    transform: translate(0);
+    animation: anim .4s linear;
+}
+
+.face{
+    width: 50px;
+    height: 50px;
+    margin: 0 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.face a{
+    color: WHITE;
+}
+.face::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #4267B2;
+    z-index: -1;
+    border-radius: 50%;
+    transform: translate(100%,100%);
+    transition: all .4s;
+}
+.face:hover::before{
+    transform: translate(0);
+    animation: anim .4s linear;
+}
+
+.twit{
+    width: 50px;
+    height: 50px;
+    margin: 0 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.twit a{
+    color: WHITE;
+}
+.twit::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #1DA1F2;
+    z-index: -1;
+    border-radius: 50%;
+    transform: translate(100%,100%);
+    transition: all .4s;
+}
+.twit:hover::before{
+    transform: translate(0);
+    animation: anim .4s linear;
+}
+
+.yt{
+    width: 50px;
+    height: 50px;
+    margin: 0 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.yt a{
+    color: WHITE;
+}
+.yt::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #FF0000;
+    z-index: -1;
+    border-radius: 50%;
+    transform: translate(100%,100%);
+    transition: all .4s;
+}
+.yt:hover::before{
+    transform: translate(0);
+    animation: anim .4s linear;
+}
+
+.spo{
+    width: 50px;
+    height: 50px;
+    margin: 0 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.spo a{
+    color: WHITE;
+}
+.spo::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #1DB954;
+    z-index: -1;
+    border-radius: 50%;
+    transform: translate(100%,100%);
+    transition: all .4s;
+}
+.spo:hover::before{
+    transform: translate(0);
+    animation: anim .4s linear;
+}
+@keyframes anim{
+    0%,100%{
+        width: 100%;
+        height: 100%;
+    }
+    50%{
+        width: 50%;
+        height: 50%;
+    }
+}
